@@ -61,7 +61,7 @@ typedef NS_OPTIONS(NSUInteger, KTSContactsManagerField){
 
 @interface KTSContactsManager : NSObject
 
-@property (strong, nonatomic) id<KTSContactsManagerDelegate> delegate;
+@property (weak, nonatomic) id<KTSContactsManagerDelegate> delegate;
 @property (strong, nonatomic) NSArray *sortDescriptors;
 
 + (instancetype)sharedManager;
